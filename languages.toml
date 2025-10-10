@@ -25,3 +25,13 @@ file-types = ["go"]
 language-servers = ["gopls"]
 auto-format = true
 formatter = { command = "gofumpt" }
+
+# Zig
+[language-server.zls]
+command = "zls"
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+formatter = { command = "zig", args = ["fmt", "--stdin"] }
+auto-format = true
