@@ -18,6 +18,9 @@ select = "underline"
 render = true
 
 [keys.normal]
+C-A-p = ":sh python3 %{buffer_name}"
+C-A-g = ":sh go run %{buffer_name}"
+C-A-z = ":sh zig run %{buffer_name}"
 S-w = ":w"
 S-q = ":q"
 
