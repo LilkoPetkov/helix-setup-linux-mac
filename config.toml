@@ -18,6 +18,7 @@ select = "underline"
 render = true
 
 [keys.normal]
+S-v = ["extend_to_line_bounds", "select_mode"]
 C-A-p = ":sh python3 %{buffer_name}"
 C-A-g = ":sh go run %{buffer_name}"
 C-A-z = ":sh zig run %{buffer_name}"

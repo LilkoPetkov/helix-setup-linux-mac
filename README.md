@@ -1,18 +1,20 @@
-# Helix Editor Setup 🚀
+# Helix Editor Setup
 
 This repository contains a configuration for the Helix editor, along with a `Makefile` to automate the setup process.
 
-## Overview 📝
+## Overview
 
-This setup provides a pre-configured environment for the Helix editor, primarily focused on **Python** and **Go** development. It includes:
+This setup provides a pre-configured environment for the Helix editor, primarily focused on **Python**, **Go**, and **Zig** development. It includes:
 
-*   🎨 A modern and popular color theme (Catppuccin Mocha).
-*   🗣️ Language server configurations for Python (`pyright`) and Go (`gopls`).
-*   💅 Auto-formatting for a wide range of languages.
-*   📦 Installation of the Helix editor itself.
-*   🛠️ Installation of necessary language tools like `pyright`, `ruff`, `gopls`, and `gofumpt`.
+*   A modern and popular color theme (Catppuccin Mocha).
+*   Language server configurations for Python (`pyright`), Go (`gopls`), and Zig (`zls`).
+*   Auto-formatting for a wide range of languages.
+*   Installation of the Helix editor itself.
+*   Installation of necessary language tools like `pyright`, `ruff`, `gopls`, and `gofumpt`.
 
-## Prerequisites 🛠️
+**Note:** The setup for the Zig language server (`zls`) is included in the configuration, but `zls` itself is not installed by the `Makefile`. You will need to install it separately.
+
+## Prerequisites
 
 Before you begin, you'll need to have the following installed on your system:
 
@@ -23,7 +25,7 @@ Before you begin, you'll need to have the following installed on your system:
 *   `pip3` (Python): For installing `ruff`.
 *   `go`: For installing `gopls` and `gofumpt`.
 
-## Installation ⚙️
+## Installation
 
 To install and set up your Helix editor configuration, simply run the following command in your terminal:
 
@@ -41,7 +43,7 @@ This will:
 
 **Important:** After the installation is complete, make sure that `~/.local/bin` and your Go bin directory (`~/go/bin`) are in your system's `PATH`. The installation script will check for this and provide a warning with instructions if they are not.
 
-## Configuration ⚙️
+## Configuration
 
 ### `config.toml`
 
@@ -67,15 +69,17 @@ This file configures language-specific settings, including language servers and 
 *   **Language Servers:**
     *   `pyright` is configured for Python.
     *   `gopls` is configured for Go.
+    *   `zls` is configured for Zig.
 *   **Formatters:**
     *   `ruff` is used for formatting Python code.
     *   `gofumpt` is used for formatting Go code.
+    *   `zig fmt` is used for formatting Zig code.
 
 ### `ignore`
 
 This file specifies patterns for files and directories that should be ignored by the file picker. The provided file is configured to ignore common Python virtual environment directories.
 
-## Makefile Targets 🎯
+## Makefile Targets
 
 The `Makefile` provides the following targets:
 
@@ -87,6 +91,4 @@ The `Makefile` provides the following targets:
 *   `install-tools`: Installs all language tools.
 *   `install-py-tools`: Installs Python-specific tools (`pyright`, `ruff`).
 *   `install-go-tools`: Installs Go-specific tools (`gopls`, `gofumpt`).
-*   `clean`: Removes temporary files created during the installation process.
-l-go-tools`: Installs Go-specific tools (`gopls`, `gofumpt`).
 *   `clean`: Removes temporary files created during the installation process.
