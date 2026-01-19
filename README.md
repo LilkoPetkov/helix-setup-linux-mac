@@ -6,7 +6,7 @@ This repository contains a configuration for the Helix editor, along with a `Mak
 
 This setup provides a pre-configured environment for the Helix editor, primarily focused on **Python**, **Go**, and **Zig** development. It includes:
 
-*   A modern and popular color theme (Catppuccin Mocha).
+*   My faviourite theme - (Catppuccin Mocha).
 *   Language server configurations for Python (`pyright`), Go (`gopls`), and Zig (`zls`).
 *   Auto-formatting for a wide range of languages.
 *   Installation of the Helix editor itself.
