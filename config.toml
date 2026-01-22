@@ -18,12 +18,12 @@ select = "underline"
 render = true
 
 [keys.normal]
-S-v = ["extend_to_line_bounds", "select_mode"]
-C-A-p = ":sh python3 %{buffer_name}"
+C-o = ":open ~/.config/helix/config.toml"
+C-A-r = ":sh python3 %{buffer_name}"
 C-A-g = ":sh go run %{buffer_name}"
 C-A-z = ":sh zig run %{buffer_name}"
-S-w = ":w"
-S-q = ":q"
+"A-w" = ":w!"
+"A-q" = ":q!"
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
