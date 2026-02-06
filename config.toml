@@ -18,7 +18,10 @@ select = "underline"
 render = true
 
 [keys.normal]
-C-o = ":open ~/.config/helix/config.toml"
+S-left = "swap_view_left"
+S-right = "swap_view_right"
+S-down = "swap_view_down"
+S-up = "swap_view_up"
 C-A-r = ":sh python3 %{buffer_name}"
 C-A-g = ":sh go run %{buffer_name}"
 C-A-z = ":sh zig run %{buffer_name}"
