@@ -18,10 +18,10 @@ select = "underline"
 render = true
 
 [keys.normal]
-S-left = "swap_view_left"
-S-right = "swap_view_right"
-S-down = "swap_view_down"
-S-up = "swap_view_up"
+S-left = "jump_view_left"
+S-right = "jump_view_right"
+S-down = "jump_view_down"
+S-up = "jump_view_up"
 C-A-r = ":sh python3 %{buffer_name}"
 C-A-g = ":sh go run %{buffer_name}"
 C-A-z = ":sh zig run %{buffer_name}"
